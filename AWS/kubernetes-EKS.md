@@ -17,10 +17,18 @@ Le fichier deployment.yaml est utilisé pour spécifier comment nos pods doivent
 Le fichier service.yaml est utilisé pour spécifier comment nos pods sont exposés.
 
 # Pour le deployment:
+
+## Cluster Kubernetes avec Amazon EKS
+1. Creer un cluster EKS
+2. Configurez kubectl pour fonctionner avec votre cluster EKS
+3. Utilisez kubectl pour charger le fichier deployment.yaml dans EKS
+4. Utilisez kubectl pour charger le fichier service.yaml dans EKS
+5. Utilisez kubectl pour confirmer votre deploiement
 - Bind your cluster on EKS to kubectl
 
 - kubectl apply - crée le déploiement et le service
 kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
 - `kubectl get pods` shows the pods in the cluster.
 - `kubectl describe services` shows services in a cluster.
 `kubectl cluster-info` shows cluster info
