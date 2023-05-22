@@ -18,9 +18,11 @@ jobs:
           name: "Say hello"
           command: "echo Hello"
   say-word:
+    docker:
+      - image: circleci/node:13.8.0
     steps:
-    - checkout
-    - run: 
+      - checkout
+      - run: 
          name: "Say word"
          command: "Echo World"
 
