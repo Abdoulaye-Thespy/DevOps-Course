@@ -25,7 +25,6 @@ Le fichier service.yaml est utilisé pour spécifier comment nos pods sont expos
 4. Utilisez kubectl pour charger le fichier service.yaml dans EKS
 5. Utilisez kubectl pour confirmer votre deploiement
 - Bind your cluster on EKS to kubectl
-
 - kubectl apply - crée le déploiement et le service
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
@@ -37,7 +36,7 @@ kubectl apply -f service.yaml
 
 ## Other container orchestration strategies
 ###  AWS ECS 
--Integrate well with AWS.
+- Integrate well with AWS.
 - Only available on AWS.
 - Easy to setup.
 
@@ -47,3 +46,16 @@ kubectl apply -f service.yaml
 ### Docker Swam
 - Une option pour exécuter simplement le conteneur manuellement avec Docker. Parfois, il est tentant de choisir un outil tout nouveau qui peut conduire à des architectures trop compliquées.
 
+# Reverse Proxy.
+- Analogy in real world: A reverse proxy is like a front desk in a hotel, we can use it to contact electricians and IT persons in case we have a problem in our hotel room.
+- Analogy in IT word: A front-end, communicates with and doesn't care what's behind the reverse proxy since the reverse proxy handles that one for it, and all it does is to communicate with the reverse proxy.
+
+## setup reverse proxy in k8s 
+- Ingress/Egress is similar to AWS security goups, all about which IP can access the ressources and on which port ?
+## Self healing and and horizontal scaling
+- kubectl autoscale deployment <NAME> --cpu-percent=<CPU_PERCENTAGE> --min=<MIN_REPLICAS> --max=<MAX_REPLICAS>
+- kubectl get hpa
+
+# Using logs
+
+# Project:

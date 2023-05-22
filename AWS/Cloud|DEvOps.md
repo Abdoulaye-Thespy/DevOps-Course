@@ -1,3 +1,31 @@
+
+# CI/CD
+Build - Test - Analyze - Deploy - Verify - Promote
+Eight principle of CI/CD
+1. Repeatable Reliable Process
+2. Automate Everything
+3. Version Control Everything
+4. Bring the Pain Forward
+5. Build-in Quality
+6. "Done" Means Released
+7. Everyone is Responsible
+8. Continuous Improvement
+
+# CI
+- Compile
+- Unit Test
+- Static Analysis
+- Dependency vulnerability testing
+- Store artifact
+
+# CD
+- Creating infrastructure
+- Provisioning servers
+- Copying files
+- Promoting to production
+- Smoke Testing (aka Verify)
+- Rollbacks
+
 # CI/CD stages
 - Build
 Everything that has to do with making code executable in production (e.g. Compile). The goal is to produce an artifact.
@@ -43,6 +71,17 @@ Free for limited use, personal or business. Boasts of faster builds.
 Extremely simple CI/CD orchestration tool. Some specialty features for libraries and packages. Free for open-source projects.
 ### GitLab	(GitLab)	
 Complete set of development tools including git repositories and built-in, integrated CI/CD pipelines. 2000 free minutes of CI/CD jobs per month.
+
+# CI with Circle CI
+- Singe responsability principle
+- Env Variable
+- Sharing information: Cache, workplace and secrets.
+- Reusable code.
+- 
+
+# CD Ansible
+
+# Prometheues
 
 ## Configuration Management and Automation Tools
 Chef	chef.io	Depends on agent to be installed. Very mature.
