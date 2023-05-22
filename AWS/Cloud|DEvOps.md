@@ -75,7 +75,13 @@ Complete set of development tools including git repositories and built-in, integ
 # CI with Circle CI
 - Singe responsability principle
 - Env Variable
-- Sharing information: Cache, workplace and secrets.
+- Sharing information: 
+1. Cache
+   - Only to share file during pipeline execution (great for file that takes time to downlaod like node modules)
+2. workspace
+   - equivalent to Cache, but no kets and can stick around.
+
+workplace and secrets.
 - Reusable code.
 - 
 
