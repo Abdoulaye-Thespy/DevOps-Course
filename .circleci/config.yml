@@ -15,7 +15,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
           command: "echo Hello"
   say-word:
     docker:
@@ -23,7 +22,6 @@ jobs:
     steps:
       - checkout
       - run: 
-         name: "Say word"
          command: "echo World"
 
 # Orchestrate jobs using workflows
@@ -33,5 +31,5 @@ workflows:
     jobs:
       - say-hello
       - say-word
-        requires:
-          - say-hello
+          requires:
+            - say-hello
