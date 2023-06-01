@@ -80,14 +80,23 @@ Complete set of development tools including git repositories and built-in, integ
    - Only to share file during pipeline execution (great for file that takes time to downlaod like node modules)
 2. workspace
    - equivalent to Cache, but no kets and can stick around.
+3. Secret Keeper.
 
 workplace and secrets.
-- Reusable code.
-- 
+- Reusable code.(Anchor & Aliase, Commands)
+
+- Reusable Code.
 
 # CD Ansible
+- Deliver the value quickcly
+- CD Intuition(Review)
+- Ansible playbook
 
-# Prometheues
+# Moniroting - Prometheues
+- Other monitoring tool: 
+1. Time-Series Data
+2. Data aggregator
+3. Data Visualizer
 
 ## Configuration Management and Automation Tools
 Chef	chef.io	Depends on agent to be installed. Very mature.
