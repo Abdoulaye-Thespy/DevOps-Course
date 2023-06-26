@@ -1,3 +1,6 @@
+# https://www.youtube.com/watch?v=cd3P3yXyx30(React)
+
+
 1. Why react
 2. JSX
 3. Cutom components
@@ -72,4 +75,5 @@ Advance React:
 - Improve readability and organisation of components.
 - useState() and useEffect();
 - useEffect() returns a function when we want to remove some side effect after component unmount.
-- Useref() gives us a way to keep values around for the entire lifecycle of the component. 
+- Useref() gives us a way to keep values around for the entire lifecycle of the component.
+- 

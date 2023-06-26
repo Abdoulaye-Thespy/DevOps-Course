@@ -24,13 +24,17 @@ Here are some key characteristics of REST APIs:
 
 Turotial: https://www.tutorialspoint.com/graphql/graphql_architecture.htm
 
-## Server Essentials & Description
+## Application component
+### Server side component
 1. Schema
 - A GraphQL schema is at the center of any GraphQL server implementation and describes the functionality available to the clients which connect to it.
 2. Query
 - A GraphQL query is the client application request to retrieve data from database or legacy API's.
 3. Resolver
 - Resolvers provide the instructions for turning a GraphQL operation into data. They resolve the query to data by defining resolver functions.
+### Client side component
+1. GraphiQL
+2. AppolloClient
 
 4. Types:
 - https://www.tutorialspoint.com/graphql/graphql_type_system.htm
